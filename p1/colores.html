@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>colores o ke lo ke</title>
+    <link id = 'estilo' rel="stylesheet" href="default.css">
+</head>
+<body>
+    <script>
+    function cambiarCSS(nuevo){
+        document.getElementById('estilo').setAttribute('href', nuevo);
+    }
+    
+    </script>
+    <h1>Pagina sencilla para decorar con estilos</h1>
+    <p>Éste es el primer parrafo que no tiene nada especial.</p>
+    <h2>Esto es un título de segundo nivel</h2>
+    <p>Que tiene dentro un parrafo con <em>un fragmento enfatizado</em> </p>
+    <h3>Esto es un título de tercer nivel</h3>
+    <p>El tercer párrafo tampoco tiene nada especial</p>
+    <button onclick="cambiarCSS('verde.css')" >Verde</button>
+    <button onclick="cambiarCSS('marron.css')" >Marron y Mazo grande</button>
+    <button onclick="cambiarCSS('consola.css')" >Consola</button>
+</body>
+</html>
